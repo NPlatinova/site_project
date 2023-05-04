@@ -5,7 +5,7 @@
 
 .container {
     max-width: 1760px;
-    overflow-x:hidden;
+    
     margin: 0 auto;
     
 }
@@ -17,6 +17,7 @@
     .container{
     max-width: 376px;
     margin: 0 auto;
+    overflow-x:hidden;
 }
 
     
@@ -37,9 +38,9 @@
     height: 1000px;
 }
 .bgn-image {
-    background-image: url('./assets/img/head_bgn.jpg');
-    width: 1920px;
-     height: 1000px;
+    /* background-image: url('./assets/img/head_bgn.jpg');
+    /* width: 1920px; */
+     /* height: 1000px; */ 
 }
 
 @media screen and (max-width:376px) {
@@ -210,9 +211,36 @@
         bottom: 25%;
 }
 }
+
+swiper-container {
+    width: 100%;
+    height: 100vh;
+    width: 1920px;
+    height: 1000px;
+  }
+
+  swiper-slide {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    
+  }
+
+  @media screen and (max-width:376px){
+    swiper-container {
+        background-image: url('./assets/img/small.jpg');
+        max-width: 100%;
+        background-repeat: no-repeat;
+        height: 406px;
+    }
+   
+
+  }
+
+
 .background-white {
     background: white;
-width: 1920px;
+/* width: 1920px; */
 }
 
 @media screen and (max-width:376px){
@@ -485,14 +513,25 @@ line-height: 200%;
 color: #564E4E;
 }
 
-.background-grey {
+/* .background-grey {
     background: linear-gradient(279.85deg, #FFFFFF 0%, #FAF5F2 100%);
     width: 1920px;
+} */
+.mobile-container {
+    display: none;
 }
-
 @media screen and (max-width:376px){
     .background-grey {
         max-width: 100%;
+    }
+
+    .mobile-container {
+        display: block;
+        background-image: url('./assets/img/Rectangle\ 7.png');
+    }
+
+    .mySwiper1 {
+        display: none;
     }
 }
 
@@ -708,8 +747,8 @@ padding-top: 16px;
 
 .homeybutton {
     position: absolute;
-    left: 1380px;
-top: 4705px;
+    left: 1685px;
+    top: 4904px;
     
 }
 
@@ -738,10 +777,14 @@ top: 4705px;
 }
 
 .background-black {
-    background: linear-gradient(275.58deg, #000000 0%, #4B4B4B 100%);
-    width: 1920px;
+    /* background: linear-gradient(275.58deg, #000000 0%, #4B4B4B 100%); */
+    /* width: 1920px; */
+    background-image: url('./assets/img/Rectangle\ 8.png');
 height: 600px;
+background-repeat: no-repeat;
+background-position: center;
 }
+
 @media screen and (max-width:376px) {
     .background-black{
     width: 100%;
