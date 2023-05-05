@@ -1,14 +1,28 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+
 .container {
-    max-width: 1760px;
-    
+    max-width: 1920px;
+    width: 100%;
     margin: 0 auto;
     
 }
+
+ .logo {
+    margin-left: 80px;
+ }
+ 
+ .basket {
+     position: relative;
+     right: 80px;
+ }
+ 
+ 
+
 @media screen and (max-width:376px) {
    html {
     max-width: 376px;
@@ -33,20 +47,16 @@
 }
 }
 
-.filter{
+/* .filter{
     background: rgba(0, 0, 0, 0.25);
     height: 1000px;
-}
-.bgn-image {
-    /* background-image: url('./assets/img/head_bgn.jpg');
-    /* width: 1920px; */
-     /* height: 1000px; */ 
-}
+} */
+
 
 @media screen and (max-width:376px) {
     .bgn-image {
         background-image: url('./assets/img/small.jpg');
-        max-width: 100%;
+        width: 100%;
         background-repeat: no-repeat;
         height: 406px;
 }
@@ -56,9 +66,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 38px;
-    /* margin-left: 80px; */
+    padding-top: 40px;
+    
 }
+
+
+
 @media screen and (max-width:376px){
     .header {
         padding-top: 24px;
@@ -82,8 +95,8 @@
 
 }
 .header-nav {
-    padding-right: 94px;
-    padding-left: 0px;
+    
+    margin-right:155px;
     
 }
 
@@ -130,16 +143,18 @@
 
 
 .interior-text {
-    margin-top: 40px;
-    margin-left: 580px;
+    padding-top: 40px;
+     /* margin-left: 660px; */
+     margin: 0 auto;
     font-family: "Poppins";
     font-size: 18px;
     text-align: center;
     line-height: 200%;
     color: white;
-    width: 574px;
-    height: 72px;
+     width: 574px;
+    /* height: 72px; */
 }
+
 @media screen and (max-width:376px){
     .interior-text {
         margin-top: 10px;
@@ -159,9 +174,10 @@
 
 .interior-search {
     display: block;
-    margin: 60px auto 0 auto;
-    width: 350px;
-    height: 30px;
+   
+    margin: 60px auto;
+    width: 365px;
+    height: 60px;
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid #FFFFFF;
     border-radius: 30px;
@@ -173,7 +189,7 @@
     color: white;
 }
 
-@media screen and (max-width:376px){
+@media screen and (max-width:375px){
     .interior-search {
         margin-top: 20px;
         margin-bottom: 100px;
@@ -199,8 +215,8 @@
 
 .btnsrch {
     position: absolute;
-    left: 1093px;
-    top: 566px;
+    left: 925px;
+    top: 565px;
 
 }
 
@@ -216,7 +232,7 @@
 swiper-container {
     width: 100%;
     height: 100vh;
-    width: 1920px;
+    max-width: 1920px;
     height: 1000px;
   }
 
@@ -227,16 +243,12 @@ swiper-container {
     
   }
 
-  .swiper-slide-active {
-    background-color: #F79489;
-}
-    
-  
+
 
   @media screen and (max-width:376px){
     swiper-container {
         background-image: url('./assets/img/small.jpg');
-        max-width: 100%;
+        width: 100%;
         background-repeat: no-repeat;
         height: 406px;
     }
@@ -247,7 +259,8 @@ swiper-container {
 
 .background-white {
     background: white;
-/* width: 1920px; */
+    margin-left: 80px;
+max-width: 1920px;
 }
 
 @media screen and (max-width:376px){
@@ -264,6 +277,7 @@ font-weight: 500;
 font-size: 36px;
 line-height: 200%;
 padding-top: 80px;
+
 }
 
 @media screen and (max-width:376px){
@@ -293,11 +307,12 @@ padding-top: 80px;
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
-line-height: 200%;
+line-height: 36px;
 margin-top: 16px; 
 margin-right: 20px;
 padding: 20px;
 border: 1px solid transparent;
+width: 425px;
 }
 
 @media screen and (max-width:376px){
@@ -316,14 +331,19 @@ box-shadow: 4px 2px 10px 2px rgba(247, 148, 137, 0.2);
 border-radius: 10px;
 }
 
-.item1 p {
+/* .item1 p, .item2 p, .item3 p, .item4 p{
     width: 385px;
    
-}
+} */
 
 .choose-item p {
      padding-top: 10px;
 }
+
+.item3 p {
+    padding-bottom: 40px;
+}
+
 .more-info {
     font-family: 'Poppins';
 font-style: normal;
@@ -332,6 +352,7 @@ font-size: 18px;
 line-height: 230%;
 color: #F79489;
 padding-top: 20px;
+text-decoration: none;
 }
 
 @media screen and (max-width:376px){
@@ -340,10 +361,6 @@ padding-top: 20px;
     }
 }
 
-.more-info a {
-    text-decoration: none;
-    color: #F79489;
-}
 
 .item4 {
     margin-left: 50px;
@@ -416,9 +433,15 @@ line-height: 200%;
 
 .visialize-foto {
     padding-top: 210px;
-    margin-left: 70px;
-    border-left: 2px solid #FADCD9;
-    padding-left: 30px;
+    margin-right: 65px;
+    margin-left: 69px;
+    /* border-left: 2px solid #FADCD9; */
+    /* padding-left: 30px; */
+  
+}
+
+.visialize-foto img{
+   width: 100%;
 }
 
 @media screen and (max-width:376px){
@@ -429,7 +452,7 @@ line-height: 200%;
     }
 
     .visialize-foto img {
-        max-width: 100%;
+        width: 100%;
         
     }
 }
@@ -444,6 +467,15 @@ line-height: 200%;
 text-align: center;
 padding-top: 200px;
 }
+
+.pro .f{
+    /* margin-right: 20px; */
+}
+
+.pro img {
+    width: 90%;
+    max-width: 425px;
+}
 @media screen and (max-width:376px){
     .features {
         padding-top: 100px;
@@ -455,13 +487,14 @@ padding-top: 200px;
     margin-top: 40px;
 }
 
+
 @media screen and (max-width:376px){
     .featured-products {
        flex-wrap: wrap;
        justify-content: space-around;
     }
     .pro > img {
-        max-width: 100%;
+        /* max-width: 100%; */
        
        
     }
@@ -481,6 +514,8 @@ padding-top: 200px;
         margin-bottom: 100px;
     }
 }
+
+
 
 .pr {
     margin-top: 20px;
@@ -554,7 +589,7 @@ font-size: 36px;
 line-height: 200%;
 color: #564E4E;
 padding-top: 84px;
-padding-left: 580px;
+padding-left: 462px;
 }
 
 @media screen and (max-width:376px){
@@ -572,8 +607,9 @@ padding: 40px 35px;
 .reviews {
     display: flex;
     margin-top: 110px;
-    /* margin-left: 70px; */
-    /* justify-content: space-between; */
+    margin-left: 70px;
+   
+    justify-content: space-between;
 }
 
 @media screen and (max-width:376px){
@@ -638,17 +674,17 @@ margin-top: 10px;
 }
 
 .user1 {
-    margin-top: 20px;
+    margin-top: 12px;
     padding-bottom: 248px;
 }
 
 .user2 {
-    margin-top: 56px;
+    margin-top: 12px;
     padding-bottom: 248px;
 }
 
 .user3 {
-    margin-top: 20px;
+    margin-top: 45px;
     padding-bottom: 248px;
 }
 
@@ -673,6 +709,15 @@ margin-top: 10px;
     padding-top: 200px;
 }
 
+.home-foto img {
+    max-width: 900px;
+    /* height: 600px; */
+    width: 110%;
+    padding-left: 0;
+  
+
+}
+
 @media screen and (max-width:376px){
     .homey {
         padding-top: 100px;
@@ -682,7 +727,7 @@ margin-top: 10px;
     }
 
     .home-foto img {
-        max-width: 100%;
+        width: 100%;
        
 
     }
@@ -695,7 +740,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 36px;
 line-height: 200%;
-padding-left: 80px;
+padding-left: 60px;
 }
 
 @media screen and (max-width:376px){
@@ -711,10 +756,12 @@ padding-left: 80px;
     font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
-line-height: 200%;
-padding-left: 80px;
+font-size: 16px;
+line-height: 36px;
+margin-right: 80px;
+margin-left: 65px;
 padding-top: 18px;
+width: 492px;
 }
 
 @media screen and (max-width:376px){
@@ -729,14 +776,14 @@ padding-top: 18px;
 
 .homey-search {
     position: relative;
-    width: 380px;
-    height: 28px;
+    width: 400px;
+    height: 60px;
     background: #FEFCFB;
 border: 1px solid #FADCD9;
 border-radius: 30px;
 margin-top: 40px;
 margin-left: 80px;
-margin-bottom: 392px;
+margin-bottom: 200px;
 padding-top: 16px;
 padding-left: 20px;
 padding-bottom: 16px;
@@ -758,8 +805,8 @@ padding-top: 16px;
 
 .homeybutton {
     position: absolute;
-    left: 1685px;
-    top: 4904px;
+    left: 1055px;
+    top: 4845px;
     
 }
 
@@ -789,7 +836,7 @@ padding-top: 16px;
 
 .background-black {
     /* background: linear-gradient(275.58deg, #000000 0%, #4B4B4B 100%); */
-    /* width: 1920px; */
+  
     background-image: url('./assets/img/Rectangle\ 8.png');
 height: 600px;
 background-repeat: no-repeat;
@@ -838,19 +885,19 @@ height: 27px;
 
 } */
 .footnav1 {
-    width: 190px;
+    width: 150px;
 }
 
 .footnav2 {
-    margin-left: 200px;
+    margin-left: 0px;
 }
 
 .footnav3 {
-    margin-left: 200px;
+    margin-left: 0px;
 }
 
 .footnav4 {
-    margin-left: 200px;
+    margin-left: 0px;
 }
 
 @media screen and (max-width: 376px){
@@ -913,7 +960,7 @@ text-decoration: none;
 
 
 .copyright {
-    margin-left: 730px;
+    margin-left: 412px;
     margin-top: 360px;
     font-family: 'Poppins';
     font-style: normal;
