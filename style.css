@@ -77,8 +77,9 @@
 @media screen and (max-width:376px) {
     .navimg {
         display: flex;
-        padding: 24.45px;
+        margin-right: 15px;
     }
+
 }
 .header-nav {
     padding-right: 94px;
@@ -225,6 +226,12 @@ swiper-container {
     background-position: center;
     
   }
+
+  .swiper-slide-active {
+    background-color: #F79489;
+}
+    
+  
 
   @media screen and (max-width:376px){
     swiper-container {
@@ -511,6 +518,10 @@ font-weight: 400;
 font-size: 14px;
 line-height: 200%;
 color: #564E4E;
+}
+
+.mySwiper1 {
+    height: 100%;
 }
 
 /* .background-grey {
@@ -806,7 +817,7 @@ background-position: center;
 
 .footer-nav {
     display: flex;
-    margin-left: 277px;
+    margin-left: 200px;
 }
 
 @media screen and (max-width:376px) {
@@ -823,9 +834,9 @@ list-style: none;
 height: 27px;
 }
 
-@media screen and (max-width: 376px){
+/* @media screen and (max-width: 376px){
 
-}
+} */
 .footnav1 {
     width: 190px;
 }
@@ -835,11 +846,11 @@ height: 27px;
 }
 
 .footnav3 {
-    margin-left: 243px;
+    margin-left: 200px;
 }
 
 .footnav4 {
-    margin-left: 243px;
+    margin-left: 200px;
 }
 
 @media screen and (max-width: 376px){
